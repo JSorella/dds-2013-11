@@ -1,14 +1,22 @@
 
 import static junit.framework.Assert.*
 
-//import junit.framework.Before .... no se que onda, no encuentro esto del @Before y el @Test
-import junit.framework.Test
+import org.junit.Before 
+import org.junit.Test
+
+//.... si les dice que no encuentra @Before y el @Test, es porque deben tener la librería del Junit 3.
+// El junit 4 está instalado.... hagan click derecho en Proyecto > Build Path > Library ... y ahí está para elegir
 
 class TestDummyDesign extends GroovyTestCase {
 
-	def integrante = new DummyDesign()
+	def integrante
 	
+	@Before
+	void setUp () {
+	  integrante = new DummyDesign()
+	}
 	
+	@Test
 	void testIntegrante4() {
 	  ///¿será igual a cuatro? :o
 	  assertEquals(4, integrante.integrante4())
