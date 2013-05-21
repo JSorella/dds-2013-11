@@ -20,6 +20,10 @@ El docente verificará en el historial del repositorio que todos hayan trabajado 
 
 class DummyDesign {
 
+	def integrante2()
+	{
+		return 2
+	}
 	
 	def integrante4()
 	{

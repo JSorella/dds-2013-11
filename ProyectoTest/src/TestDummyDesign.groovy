@@ -14,6 +14,12 @@ class TestDummyDesign extends GroovyTestCase {
 	}
 	
 	@Test
+	void testIntegrante2() {
+		//Verifica que integrante2 devuelva 2
+	  assertEquals(2, integrante.integrante2())
+	}
+	
+	@Test
 	void testIntegrante4() {
 	  ///¿será igual a cuatro? :o
 	  assertEquals(4, integrante.integrante4())
